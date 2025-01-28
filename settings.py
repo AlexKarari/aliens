@@ -1,6 +1,7 @@
 # adding fuctionality to the game
 
-class Settings():
+
+class Settings:
     """A class to store all settings for the Alien Invasion game."""
 
     def __init__(self):
@@ -17,6 +18,4 @@ class Settings():
         self.bullet_speed_factor = 1
         self.bullet_width = 3
         self.bullet_height = 15
-        self.bullet_color = 60,60,60
-
-        
+        self.bullet_color = 60, 60, 60

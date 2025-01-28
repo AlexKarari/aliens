@@ -1,13 +1,14 @@
 import pygame
 
-class Ship():
+
+class Ship:
     def __init__(self, ai_settings, screen):
         """Initialize the ship and set its starting position."""
         self.screen = screen
         self.ai_settings = ai_settings
 
         # Load the ship and get its rect.
-        self.image = pygame.image.load('images/ship.bmp')
+        self.image = pygame.image.load("images/ship.bmp")
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
@@ -29,7 +30,7 @@ class Ship():
             self.center += self.ai_settings.ship_speed_factor
         if self.moving_left and self.rect.left > 0:
             self.center -= self.ai_settings.ship_speed_factor
-        
+
         # update rect object from self.center
         self.rect.centerx = self.center
 
