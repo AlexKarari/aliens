@@ -6,7 +6,7 @@ class Alien(Sprite):
     """A class to represent a single alien in the fleet."""
 
     def __init__(self, ai_settings, screen):
-        super(Alien, self).__init__
+        super(Alien, self).__init__()
         self.screen = screen
         self.ai_settings = ai_settings
 
@@ -23,4 +23,4 @@ class Alien(Sprite):
 
     def blitme(self):
         """Draw the alien at its current location."""
-        self.screen.blit(self.image, self.rect)
+        self.screen.blit(self.image, self.rect

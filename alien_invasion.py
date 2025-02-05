@@ -6,7 +6,6 @@ from pygame.sprite import Group
 from settings import Settings
 
 from ship import Ship
-from alien import Alien
 
 import game_functions as gf
 
@@ -36,4 +35,4 @@ def run_game():
         gf.update_screen(ai_settings, screen, ship, aliens, bullets)
 
 
-run_game()
+r
