@@ -35,5 +35,7 @@ class Alien(Sprite):
 
     def update(self):
         """Move the alien to the right or left."""
-        self.x += (self.ai_settings.alien_speed_factor * self.ai_settings.fleet_direction) # Track aliens exact position
-        self.rect.x = self.x # Update position of alein's rect 
+        self.x += (
+            self.ai_settings.alien_speed_factor * self.ai_settings.fleet_direction
+        )  # Track aliens exact position
+        self.rect.x = self.x  # Update position of alein's rect
