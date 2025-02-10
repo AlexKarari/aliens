@@ -159,6 +159,7 @@ def ship_hit(ai_settings, stats, screen, ship, aliens, bullets):
     else:
         stats.game_active = False
 
+
 def check_aliens_bottom(ai_settings, stats, screen, ship, aliens, bullets):
     """Check if any aliens have reached the bottomof the screen."""
     screen_rect = screen.get_rect()
@@ -167,6 +168,7 @@ def check_aliens_bottom(ai_settings, stats, screen, ship, aliens, bullets):
             # Treat this the same as if the ship got hit.
             ship_hit(ai_settings, stats, screen, ship, aliens, bullets)
             break
+
 
 def update_aliens(ai_settings, stats, screen, ship, aliens, bullets):
     """Check if the fleet is at an edge,
@@ -182,5 +184,3 @@ def update_aliens(ai_settings, stats, screen, ship, aliens, bullets):
 
     # Look for aliens hitting the bottom of the screen
     check_aliens_bottom(ai_settings, stats, screen, ship, aliens, bullets)
-
-
