@@ -66,6 +66,9 @@ def check_play_button(
     """Start a new game when the player clicks Play."""
     button_clicked = play_button.rect.collidepoint(mouse_x, mouse_y)
     if button_clicked and not stats.game_active:
+        # reset the game settings
+        ai_settings.initialize_dynamic_settings()
+
         # Hide the mouse cursor
         pygame.mouse.set_visible(False)  # Passing false makes pygame hide cursor
 
