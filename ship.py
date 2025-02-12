@@ -1,9 +1,13 @@
 import pygame
+from pygame.sprite import Sprite
 
 
-class Ship:
+class Ship(Sprite):
     def __init__(self, ai_settings, screen):
         """Initialize the ship and set its starting position."""
+        super(
+            Ship, self
+        ).__init__()  # ship inherits from Sprite, to create a group of ships
         self.screen = screen
         self.ai_settings = ai_settings
 
@@ -41,4 +45,3 @@ class Ship:
     def centre_ship(self):
         """centre the ship on the screen."""
         self.centre = self.screen_rect.centerx
-
