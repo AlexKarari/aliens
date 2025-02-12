@@ -242,5 +242,5 @@ def update_aliens(ai_settings, stats, screen, ship, aliens, bullets):
 def check_high_scores(stats, sb):
     """Check to see if there's a new high score."""
     if stats.score > stats.high_score:
-        stats.score = stats.high_score
+        stats.high_score = stats.score
         sb.prep_high_score()
